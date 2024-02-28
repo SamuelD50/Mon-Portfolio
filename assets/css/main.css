@@ -1592,8 +1592,8 @@ input, select, textarea {
 
 		.image img {
 			display: block;
-			width: 100%;
-		}
+/* 			width: 100%;
+ */		}
 
 		.image.fit {
 			display: block;
@@ -1612,7 +1612,7 @@ input, select, textarea {
 
 			.image.centered img {
 				margin: 0 auto;
-				width: auto;
+				/* width: auto; */
 			}
 
 		.image.featured {
