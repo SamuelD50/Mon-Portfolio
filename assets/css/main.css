@@ -1620,6 +1620,22 @@ input, select, textarea {
 			width: 100%;
 			margin: 0 0 2em 0;
 		}
+	
+	.maPhoto {
+		width: 400px;
+
+		@media screen and (max-width: 650px){
+			width: 300px;
+		}
+
+		@media screen and (max-width: 500px){
+			width: 200px;
+		}
+
+		@media screen and (max-width: 280px) {
+			width: 150px;
+		}
+	}
 
 		
 
