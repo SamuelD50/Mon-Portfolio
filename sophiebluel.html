@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<title>JavaScript - Samuel Duflos</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" type="image/png" href="images/renard.png"/>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<section id="header" class="wrapper">
+
+				<!-- Logo -->
+				<div id="logo">
+					<h1>
+						<a href="index.html">
+							Samuel Duflos
+						</a>
+					</h1>
+					<p>
+						Ici découvrez mes différents travaux !
+					</p>
+				</div>
+
+				<!-- Nav -->
+				<nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                Accueil
+                            </a>
+                        </li>
+                        <li class="current">
+                            <a href="#">
+                                Mes projets
+                            </a>
+                            <ul>
+								<li>
+									<a href="booki.html">
+										HTML/CSS
+									</a>
+								</li>
+								<li class="current">
+									<a href="sophiebluel.html">
+										JavaScript
+									</a>
+								</li>
+								<li>
+									<a href="menumaker.html">
+										Gestion de projet
+									</a>
+								</li>
+								<li>
+									<a href="ninacarducci.html">
+										Optimisation web
+									</a>
+								</li>
+								<li>
+									<a href="kasa.html">
+										React
+									</a>
+								</li>
+								<li>
+									<a href="monvieuxgrimoire.html">
+										Back-end
+									</a>
+								</li>
+								<li>
+									<a href="monportfolio.html">
+										Portfolio
+									</a>
+								</li>
+							</ul>
+                        </li>	
+                    </ul>
+                </nav>
+			</section>
+
+			<!-- Main -->
+			<section id="main" class="wrapper style2">
+				<div class="title">
+					JavaScript
+				</div>
+                <div class="container">
+
+					<!-- Content -->
+					<div id="content">
+						<header class="style1">
+							<h2>
+                            	Créer une page web<br class="mobile-hide" />
+								dynamique
+                        	</h2>
+						</header>
+						<div class="container-gallery">
+							<div id="image-modal" class="image-modal">
+								<span class="close" id="close-modal">
+									&times;
+								</span>
+								<div class="modal-container">
+									<img class="modal-content" id="modal-image" />
+									<h2 class="modal-caption"></h2>
+								</div>
+							</div>
+							<div class="gallery">
+								<div class="gallery-wrapper">
+									<div class="tall">
+										<img src="images/SophieBluel-Gallery.webp" alt="Modale pour gérer la galerie"/>
+									</div>
+									<div class="big">
+										<img src="images/SophieBluel-Add.webp" alt="Modale d'ajout de photo"/>
+									</div>
+									<div class="tall">
+										<img src="images/SophieBluel-Home.webp" alt="Page d'accueil" />
+									</div>
+								</div>
+							</div>
+						</div>
+						<section id="features">
+							<div class="feature-list">
+								<div class="row">
+									<div class="col-6 col-12-medium">
+										<section>
+											<h3 class="icon brands fa-js">
+												Etapes du projet
+											</h3>
+											<ol>
+												<li>
+													Créer la page de présentation des travaux
+                                                     <ul>
+                                                        <li>
+                                                            Récupérer les travaux depuis le back-end
+                                                        </li>
+                                                        <li>
+                                                            Réalisation du filtrage par catégorie
+                                                        </li>
+                                                    </ul>
+												</li>
+												<li>
+													Créer la page de connexion
+													<ul>
+														<li>
+															Gérer l'authentification de l'utilisateur
+														</li>
+													</ul>
+												</li>
+												<li>
+													Gérer les travaux
+                                                    <ul>
+                                                        <li>
+                                                            Supprimer des travaux via l'API
+                                        	            </li>
+                                                    	<li>
+                                                            Ajouter des travaux avec les formulaires
+                                                        </li>
+                                                        <li>
+                                                            Afficher dynamiquement les travaux
+                                                        </li>
+                                                	</ul>
+												</li>
+												<li>
+													Gérer les erreurs dans les formulaires
+												</li>
+											</ol>
+										</section>
+									</div>
+									<div class="col-6 col-12-medium">
+										<section>
+											<h3 class="icon solid fa-search">
+												Compétences évaluées
+											</h3>
+											<ul>
+												<li>
+													Gérer les événements utilisateurs
+												</li>
+												<li>
+													Manipuler les éléments du DOM
+												</li>
+												<li>
+													Récupérer les données utilisateurs via les formulaires
+												</li>
+											</ul>
+										</section>
+									</div>
+								</div>
+							</div>
+						</section>
+                            
+						<article class="box post">
+							<h3>
+								Description
+							</h3>
+							<p>
+								Pour ce second projet, je découvre JavaScript pour la première fois en utilisant Node.js et le gestionnaire de paquets npm.
+								A l'aide de la documentation Swagger, j'ai récupéré dynamiquement l'ensemble des travaux en utilisant la fonction fetch().
+								En utilisant des écouteurs d'événements au clic sur les filtres, je récupère les travaux ayant la même chaîne de caractère que celle de mon filtre. 
+								Pour l'authentification, j'utilise la méthode POST de fetch() pour envoyer le contenu du formulaire vers l'API. Si la connexion est autorisée, je stocke le token sur le localStorage.
+								Après avoir construit la fenêtre modale, géré son ouverture et sa fermeture et récupéré les travaux, j'utilise la méthode DELETE de fetch() pour supprimer une photo ou toute la galerie d'un coup, que ce soit sur la modale ou sur la page d'accueil.
+								L'objet FormData compile l'ensemble de paires clé/valeur du formulaire d'ajout avant de l'envoyer vers l'API avec la méthode POST de fetch().
+								Enfin, on va afficher dynamiquement la nouvelle image dans la modale en reconstituant entièrement tous les travaux (aucun rechargement de page).
+							</p>
+							<h3>
+								Difficultés rencontrées
+							</h3>
+							<ul class="difficulties">
+								<li>
+									Nouveau langage donc nouvelle logique à s'approprier
+								</li>
+							</ul>
+							<h3>
+								Repository GitHub du projet
+							</h3>
+							<p>
+								<a href="https://github.com/SamuelD50/Site-Sophie-Bluel">
+									Portfolio de la photographe Sophie Bluel
+								</a>
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- Footer -->
+			<section id="footer" class="wrapper">
+				<div class="title">
+					Contact
+				</div>
+				<div class="container">							
+					<section id="features">
+						<div class="feature-list">
+							<div class="row">
+								<div class="col-6 col-12-medium">
+									<section>
+										<h3 class="icon solid fa-envelope">
+											Email
+										</h3>
+										<p>
+											<a href="mailto:duflos.samuel@gmail.com" target="_blank">
+												duflos.samuel@gmail.com
+											</a>
+										</p>
+									</section>
+								</div>
+								<div class="col-6 col-12-medium">
+									<section>
+										<h3 class="icon solid fa-phone">
+											Téléphone
+										</h3>
+										<p>
+											<a href="tel:+33642906353" target="_blank">
+												06 42 90 63 53
+											</a>
+										</p>
+									</section>
+								</div>
+								<div class="col-6 col-12-medium">
+									<section>
+										<h3 class="icon brands fa-linkedin">
+											LinkedIn
+										</h3>
+										<p>
+											<a href="https://www.linkedin.com/in/samuel-duflos-b5624b135" target="_blank">
+												Profil LinkedIn
+											</a>
+										</p>
+									</section>
+								</div>
+								<div class="col-6 col-12-medium">
+									<section>
+										<h3 class="icon brands fa-github">
+											GitHub
+										</h3>
+										<p>
+											<a href="https://github.com/SamuelD50" target="_blank">
+												https://github.com/SamuelD50
+											</a>
+										</p>
+									</section>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div id="copyright">
+						<ul>
+							<li>
+								&copy; Samuel Duflos
+							</li>
+							<li>
+								<a href="mentionslegales.html">
+									Mentions légales
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/gallery.js"></script>
+		<!--  -->
+	</body>
+</html>

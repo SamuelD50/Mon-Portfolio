@@ -1,0 +1,291 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+	<head>
+		<title>HTML/CSS - Samuel Duflos</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="shortcut icon" type="image/png" href="images/renard.png"/>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<section id="header" class="wrapper">
+
+				<!-- Logo -->
+				<div id="logo">
+					<h1>
+						<a href="index.html">
+							Samuel Duflos
+						</a>
+					</h1>
+					<p>
+						Ici découvrez mes différents travaux !
+					</p>
+				</div>
+
+				<!-- Nav -->
+				<nav id="nav">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                Accueil
+                            </a>
+                        </li>
+                        <li class="current">
+                            <a href="#">
+                                Mes projets
+                            </a>
+                            <ul>
+								<li class="current">
+									<a href="booki.html">
+										HTML/CSS
+									</a>
+								</li>
+								<li>
+									<a href="sophiebluel.html">
+										JavaScript
+									</a>
+								</li>
+								<li>
+									<a href="menumaker.html">
+										Gestion de projet
+									</a>
+								</li>
+								<li>
+									<a href="ninacarducci.html">
+										Optimisation web
+									</a>
+								</li>
+								<li>
+									<a href="kasa.html">
+										React
+									</a>
+								</li>
+								<li>
+									<a href="monvieuxgrimoire.html">
+										Back-end
+									</a>
+								</li>
+								<li>
+									<a href="monportfolio.html">
+										Portfolio
+									</a>
+								</li>
+							</ul>
+                        </li>	
+                    </ul>
+                </nav>
+			</section>
+
+			<!-- Main -->
+			<section id="main" class="wrapper style2">
+				<div class="title">
+					HTML & CSS
+				</div>
+                <div class="container">
+					<div id="content">
+						<header class="style1">
+							<h2>
+								Créer la page d'accueil d'une<br class="mobile-hide" />
+								agence de voyage
+							</h2>
+						</header>
+						<div class="container-gallery">
+							<div id="image-modal" class="image-modal">
+								<span class="close" id="close-modal">
+									&times;
+								</span>
+								<div class="modal-container">
+									<img class="modal-content" id="modal-image" />
+									<h2 class="modal-caption"></h2>
+								</div>
+							</div>
+							<div class="gallery">
+								<div class="gallery-wrapper">
+									<div class="big">
+										<img src="images/Booki-Accueil.webp" alt="Page d'accueil de Booki"/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<section id="features">
+							<div class="feature-list">
+								<div class="row">
+									<div class="col-6 col-12-medium">
+										<section>
+											<h3 class="icon solid fa-code">
+												Etapes du projet
+											</h3>
+											<ol>
+												<li>
+													Mettre en place l'environnement de développement
+												</li>
+												<li>
+													Découper la maquette Figma
+												</li>
+												<li>
+													Intégrer la maquette
+												</li>
+												<li>
+													Mettre en place le responsive design
+												</li>
+												<li>
+													Vérifier la qualité du code (W3C)
+												</li>
+											</ol>
+										</section>
+									</div>
+									<div class="col-6 col-12-medium">
+										<section>
+											<h3 class="icon solid fa-search">
+												Compétences évaluées
+											</h3>
+											<ul>
+												<li>
+													Installer un environnement de développement front-end
+												</li>
+												<li>
+													Intégrer du contenu conformément à une maquette
+												</li>
+												<li>
+													Implémenter une interface responsive
+												</li>
+												<li>
+													Versionner son projet avec Git et GitHub
+												</li>
+											</ul>
+										</section>
+									</div>
+								</div>
+							</div>
+						</section>
+
+						<article class="box post">
+							<h3>
+								Description
+							</h3>
+							<p>
+								Pour ce premier projet, découper préalablement la maquette Figma (mobile < 768px, tablette >= 768px, desktop > 1024px) m'a permis de mieux structurer ma page HTML.
+								J'ai utilisé les flexbox pour organiser les éléments que ce soit verticalement ou horizontalement.
+								Pour les cartes d'hébergement, je me suis inspiré des snippets de code de W3C et j'ai adapté les images avec la propriété CSS "Object-fit".
+								Les Média Queries ont été utilisées pour rendre la page adaptable aux diverses tailles d'écran, optimisant ainsi l'expérience utilisateur. 
+								La mise en page a été réalisée à l'aide des Chrome DevTools permettant d'ajuster la largeur de l'écran et d'observer les modifications nécessaires.
+								La balise méta viewport a été intégrée pour optimiser le rendu, la lisibilité et l'adaptabilité de la page aux différents supports.
+								Afin de rendre le code plus clair, j'ai utilisé la règle @import afin de trier soigneusement les CSS concernant le header, le main, le footer ainsi que les Média Queries.
+								Enfin, j'ai vérifié la conformité de mon code aux standards du web à l'aide des validateurs HTML et CSS du W3C.
+							</p>
+							<h3>
+								Difficultés rencontrées
+							</h3>
+							<ul class="difficulties">
+								<li>
+									Volonté de retranscrire la maquette au pixel près
+								</li>
+								<li>
+									Prise en main des Médias Queries
+								</li>
+							</ul>
+							<h3>
+								Repository GitHub du projet
+							</h3>
+							<p>
+								<a href="https://github.com/SamuelD50/Site-Booki">
+									Agence de voyage Booki
+								</a>
+							</p>
+						</article>
+					</div>
+				</div>	
+			</section>
+
+			<!-- Footer -->
+			<section id="footer" class="wrapper">
+				<div class="title">
+					Contact
+				</div>
+				<div class="container">							
+					<!-- Contact -->
+					<section id="features">
+						<div class="feature-list">
+							<div class="row">
+								<div class="col-6 col-12-medium">
+									<section>
+										<h3 class="icon solid fa-envelope">
+											Email
+										</h3>
+										<p>
+											<a href="mailto:duflos.samuel@gmail.com" target="_blank">
+												duflos.samuel@gmail.com
+											</a>
+										</p>
+									</section>
+								</div>
+								<div class="col-6 col-12-medium">
+									<section>
+										<h3 class="icon solid fa-phone">
+											Téléphone
+										</h3>
+										<p>
+											<a href="tel:+33642906353" target="_blank">
+												06 42 90 63 53
+											</a>
+										</p>
+									</section>
+								</div>
+								<div class="col-6 col-12-medium">
+									<section>
+										<h3 class="icon brands fa-linkedin">
+											LinkedIn
+										</h3>
+										<p>
+											<a href="https://www.linkedin.com/in/samuel-duflos-b5624b135" target="_blank">
+												Profil LinkedIn
+											</a>
+										</p>
+									</section>
+								</div>
+								<div class="col-6 col-12-medium">
+									<section>
+										<h3 class="icon brands fa-github">
+											GitHub
+										</h3>
+										<p>
+											<a href="https://github.com/SamuelD50" target="_blank">
+												https://github.com/SamuelD50
+											</a>
+										</p>
+									</section>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div id="copyright">
+						<ul>
+							<li>
+								&copy; Samuel Duflos
+							</li>
+							<li>
+								<a href="mentionslegales.html">
+									Mentions légales
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/gallery.js"></script>
+		<!--  -->
+	</body>
+</html>
