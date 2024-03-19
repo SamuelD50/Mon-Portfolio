@@ -105,8 +105,17 @@
 							</div>
 							<div class="gallery">
 								<div class="gallery-wrapper">
-									<div class="tall">
+									<div class="big">
 										<img src="images/Kasa-Accueil.webp" alt="Page d'accueil de Kasa"/>
+									</div>
+									<div class="big">
+										<img src="images/Kasa-Hebergements.webp" alt="Animations Sass des flèches"/>
+									</div>
+									<div class="big">
+										<img src="images/Kasa-APropos.webp" alt="Construction de la page avec des composants"/>
+									</div>
+									<div class="big">
+										<img src="images/Kasa-Erreur.webp" alt="Redirection avec UseNavigate"/>
 									</div>
 								</div>
 							</div>
@@ -169,6 +178,35 @@
 							</div>
 						</section>
 						
+						<article class="box post">
+							<h3>
+								Description
+							</h3>
+							<p>
+								Pour ce cinquième projet, j'ai d'abord initialisé l'application React avec create-react-app puis j'ai configuré le router avec react-router-dom à l'aide du gestionnaire de paquets npm.
+								J'ai mis en place les différentes routes vers les pages d'accueil (Home), d'hébergements (Hosting), d'à propos (About) et de gestion des erreurs (Error).
+								Pour construire mes pages, j'ai d'abord créé des composants React en utilisant des props auxquels j'ai ensuite passé les valeurs appropriées provenant de mon fichier JSON avec la fonction map si nécessaire.
+								Pour mettre en place les animations, j'ai notamment utilisé le hook d'état UseState afin de configurer ma flèche rotative en mode ouverte/fermée (Toggle) ou encore les flèches de mon carrousel.
+								Pour la mise en forme, j'ai utilisé Sass pour structurer mon CSS et j'ai également rendu le contenu adaptable aux différents supports (Design responsive).
+								En cas d'erreur sur l'identifiant d'un hébergement dans l'URL, j'ai géré les redirections avec le composant Navigate et le hook UseNavigate.
+							</p>
+							<h3>
+								Difficultés rencontrées
+							</h3>
+							<ul class="difficulties">
+								<li>
+									Gérer les animations CSS
+								</li>
+							</ul>
+							<h3>
+								Repository GitHub du projet
+							</h3>
+							<p>
+								<a href="https://github.com/SamuelD50/Site-Kasa">
+									Application de location immobilière Kasa
+								</a>
+							</p>
+						</article>
 					</div>
 				</div>	
 			</section>
