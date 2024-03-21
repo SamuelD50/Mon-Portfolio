@@ -37,7 +37,7 @@
 		// Title Bar.
 			$(
 				'<div id="titleBar">' +
-					'<a href="#navPanel" class="toggle"></a>' +
+					'<a href="#navPanel" class="toggle" title="Ouverture/Fermeture du menu"></a>' +
 					'<span class="title">' + $('#logo h1').html() + '</span>' +
 				'</div>'
 			)
