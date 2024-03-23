@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     img.addEventListener("click", function () {
       modal.style.display = "block";
       modalImg.src = this.src;
+      modalImg.alt = this.alt;
       modalCaption.innerText = this.alt;
     });
   });

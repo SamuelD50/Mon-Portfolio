@@ -108,7 +108,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 700;
-		color: #e97770;
+		color: #A52A2A;
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -122,7 +122,7 @@ input, select, textarea {
 		-ms-transition: color .25s ease-in-out;
 		transition: color .25s ease-in-out;
 		text-decoration: underline;
-		color: #717479;
+		color: #000000;
 	}
 
 		a:hover {
@@ -1872,7 +1872,7 @@ input, select, textarea {
 
 		.feature-list section {
 			border-top: solid 1px #eee;
-			padding-top: 3em;
+			padding-top: 4em;
 			padding-left: 5em;
 			position: relative;
 		}
@@ -1886,18 +1886,17 @@ input, select, textarea {
 
 		}
 
-		.feature-list h3 {
-			color: #e97770 !important;
+		#main .feature-list h3 {
+			color: #A52A2A !important;
 			margin: -0.35em 0 0.75em 0;
 			font-size: 1.15em;
 			letter-spacing: 0.05em;
 		}
 
-			.feature-list h3:before {
+			#main .feature-list h3:before {
 				display: block;
-				color: #fff;
-				/* background: #2f333b url("images/overlay.png"); */
-				background-color: #001F3F;
+				color: #FDF5E6;
+				background-color: #A52A2A;
 				border-radius: 2.5em;
 				text-align: center;
 				width: 2.5em;
@@ -1908,6 +1907,14 @@ input, select, textarea {
 				left: 0;
 				margin-top: -0.5em;
 			}
+
+		#footer .feature-list h3 {
+			color: #FDF5E6 !important;
+			margin: -0.35em 0 0.75em 0;
+			font-size: 1.15em;
+			letter-spacing: 0.05em;
+		}
+
 
 		.feature-list.small section {
 			padding-left: 3.5em;
@@ -2213,13 +2220,12 @@ input, select, textarea {
 			}
 
 		.wrapper.style1 {
-			background-color: #e97770;
-			color: #eee;
-			color: rgba(255, 255, 255, 0.75);
+			background-color: #A52A2A;
+			color: #fff;
 		}
 
 			.wrapper.style1 .title {
-				background-color: #e97770;
+				background-color: #A52A2A;
 				color: #fff;
 			}
 
@@ -2233,7 +2239,7 @@ input, select, textarea {
 
 			.wrapper.style2 .title {
 				background: #FDF5E6;
-				color: #484d55;
+				color: #001F3F;
 			}
 
 		.wrapper.style3 {
@@ -2577,7 +2583,18 @@ input, select, textarea {
 			}
 
 			#footer .feature-list h3:before {
-				background-color: #3d4249;
+				background-color: #FDF5E6;
+				display: block;
+				color: #A52A2A;
+				border-radius: 2.5em;
+				text-align: center;
+				width: 2.5em;
+				height: 2.5em;
+				line-height: 2.5em;
+				margin-right: 0.75em;
+				position: absolute;
+				left: 0;
+				margin-top: -0.5em;
 			}
 
 /* Copyright */
@@ -2766,14 +2783,14 @@ input, select, textarea {
 
 	}
 
-		@media screen and (max-width: 980px) and (min-width: 737px) {
+		/* @media screen and (max-width: 980px) and (min-width: 737px) {
 
 				#footer .feature-list > .row > :nth-child(2) > section {
 					border-top: 0;
 					padding-top: 0;
 				}
 
-		}
+		} */
 
 	@media screen and (max-width: 980px) {
 
