@@ -112,7 +112,7 @@ input, select, textarea {
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-			color: inherit;
+			color: #A52A2A;
 			text-decoration: none;
 		}
 
@@ -2314,8 +2314,7 @@ input, select, textarea {
 		}
 
 		#logo p {
-			color: #eee;
-			color: rgba(255, 255, 255, 0.5);
+			color: #A52A2A;
 			text-transform: uppercase;
 			margin: 1.25em 0 0 0;
 			display: block;
@@ -3167,7 +3166,7 @@ input, select, textarea {
 			}
 
 				#content header.style1 {
-					padding-bottom: 2.5em;
+					padding-bottom: 1.5em;
 				}
 
 
