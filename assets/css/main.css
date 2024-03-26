@@ -1616,6 +1616,8 @@ input, select, textarea {
 
 			.image.centered img {
 				margin: 0 auto;
+				max-width: 100%;
+				height: auto;
 				/* width: auto; */
 			}
 
@@ -1633,22 +1635,6 @@ input, select, textarea {
 
 		@media screen and (max-width: 950px) {
 			flex-direction: column;
-		}
-	}
-	
-	.maPhoto {
-		width: 400px;
-
-		@media screen and (max-width: 650px){
-			width: 300px;
-		}
-
-		@media screen and (max-width: 500px){
-			width: 200px;
-		}
-
-		@media screen and (max-width: 280px) {
-			width: 150px;
 		}
 	}
 
@@ -1960,6 +1946,7 @@ input, select, textarea {
 		.icon.brands:before {
 			font-family: 'Font Awesome 5 Brands';
 		}
+		
 
 /* Box */
 
@@ -1994,6 +1981,10 @@ input, select, textarea {
 
 	.box.post-excerpt h3, .box.post-excerpt p {
 		margin-left: 7em;
+	}
+
+	.box li {
+		padding: 0.5em 0 0.5em 0;
 	}
 
 /* Grid Masonry  */
@@ -2145,8 +2136,8 @@ input, select, textarea {
 	}
 	
 	.modal-content {
-		width: auto;
-		max-height: 90vh;
+		max-width: 80vw;
+		height: 90vh;
 		border-radius: 16px;
 		object-fit: contain;
 		position: relative;
