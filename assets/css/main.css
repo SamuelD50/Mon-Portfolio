@@ -2136,7 +2136,7 @@ input, select, textarea {
 	}
 	
 	.modal-content {
-		max-width: 80vw;
+		max-width: 90vw;
 		height: 90vh;
 		border-radius: 16px;
 		object-fit: contain;
@@ -2145,21 +2145,28 @@ input, select, textarea {
 
 	.modal-caption {
 		position: absolute;
-		bottom: 80px;
+		bottom: 40px;
 		border: #484d55 3px double;
 		background-color: #FDF5E6;
 		padding: 15px;
 		color: #001F3F;
 		border-radius: 10px;
 	}
-	
+
+	@media screen and (max-width: 800px) {
+		.modal-caption {
+			bottom: 15px;
+		}
+	}
+
 	.close {
 		position: absolute;
 		top: 20px;
 		right: 30px;
 		color:rgba(6, 120, 127, 0.75);
-		font-size: 40px;
+		font-size: 50px;
 		cursor: pointer;
+		z-index: 1;
 	}
 
 /* Wrapper */
