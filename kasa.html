@@ -6,16 +6,21 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
         <link rel="shortcut icon" type="image/png" href="images/renard.png"/>
-		<meta name="description" content="Votre description ici. Elle doit être pertinente et concise, résumant le contenu de votre page en quelques phrases.">
+		<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxP.ttf" crossorigin>
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfBBc9.ttf" crossorigin>
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmYUtfBBc9.ttf" crossorigin>
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v27/KFOkCnqEu92Fr1Mu51xIIzc.ttf" crossorigin>
+		<meta name="description" content="Bienvenue sur mon portfolio de développeur web. Sur cette page, découvrez mon projet N°5 de ma formation OpenClassrooms sur la création d'une application React.">
 	</head>
-	<body class="no-sidebar is-preload">
-		<div id="page-wrapper">
+	<body class="no-sidebar is-preload" aria-label="Page concernant le projet React">
+		<div id="page-wrapper" role="main">
 
 			<!-- Header -->
-			<section id="header" class="wrapper">
+			<section id="header" class="wrapper" role="banner" aria-label="En-tête">
 
 				<!-- Logo -->
-				<div id="logo">
+				<div id="logo" role="heading" aria-level="1">
 					<h1>
 						<a href="index.html" title="Revenir à la page d'accueil">
 							Samuel Duflos
@@ -27,76 +32,77 @@
 				</div>
 
 				<!-- Nav -->
-				<nav id="nav">
-					<ul>
-						<li>
-							<a href="index.html" class="icon solid fa-home" title="Page d'accueil">
+				<nav id="nav" role="navigation" aria-label="Menu principal">
+					<ul role="menu">
+						<li role="menuitem">
+							<a href="index.html" class="icon solid fa-home" title="Page d'accueil" aria-label="Accueil">
 								Accueil
 							</a>
 						</li>
-						<li class="current">
-							<a href="#" class="icon solid fa-business-time" title="Mes projets">
+						<li role="menuitem" aria-haspopup="true">
+							<a href="#" class="icon solid fa-business-time" title="Mes projets" aria-label="Mes projets">
 								Mes projets
 							</a>
-							<ul>
-								<li>
-									<a href="booki.html" class="icon solid fa-code" title="HTML/CSS">
+							<ul role="menu" aria-hidden="true">
+								<li role="menuitem">
+									<a href="booki.html" class="icon solid fa-code" title="HTML/CSS" aria-label="HTML/CSS">
 										HTML/CSS
 									</a>
 								</li>
-								<li>
-									<a href="sophiebluel.html" class="icon brands fa-js" title="JavaScript">
+								<li role="menuitem">
+									<a href="sophiebluel.html" class="icon brands fa-js" title="JavaScript" aria-label="JavaScript">
 										JavaScript
 									</a>
 								</li>
-								<li>
-									<a href="menumaker.html" class="icon solid fa-list" title="Gestion de projet">
+								<li role="menuitem">
+									<a href="menumaker.html" class="icon solid fa-list" title="Gestion de projet" aria-label="Gestion de projet">
 										Gestion de projet
 									</a>
 								</li>
-								<li>
-									<a href="ninacarducci.html" class="icon solid fa-wrench" title="Optimisation web">
+								<li role="menuitem">
+									<a href="ninacarducci.html" class="icon solid fa-wrench" title="Optimisation web" aria-label="Optimisation web">
 										Optimisation web
 									</a>
 								</li>
-								<li class="current">
-									<a href="kasa.html" class="icon brands fa-react" title="React">
+								<li role="menuitem">
+									<a href="kasa.html" class="icon brands fa-react" title="React" aria-label="React">
 										React
 									</a>
 								</li>
-								<li>
-									<a href="monvieuxgrimoire.html" class="icon brands fa-node" title="Back-end">
+								<li role="menuitem">
+									<a href="monvieuxgrimoire.html" class="icon brands fa-node" title="Back-end" aria-label="NodeJS">
 										Back-end
 									</a>
 								</li>
-								<li>
-									<a href="monportfolio.html" class="icon solid fa-briefcase" title="Portfolio">
+								<li role="menuitem">
+									<a href="monportfolio.html" class="icon solid fa-briefcase" title="Portfolio" aria-label="Portfolio">
 										Portfolio
 									</a>
 								</li>
 							</ul>
-						</li>
+						</li>	
 					</ul>
 				</nav>
 			</section>
-
+			
 			<!-- Main -->
-			<section id="main" class="wrapper style2">
-				<div class="title">
+			<section id="main" class="wrapper style2" role="main" aria-label="Projet React">
+				<div class="title" role="heading" aria-level="2">
 					React
 				</div>
                 <div class="container">
 					<!-- Content -->
 					<div id="content">
+
 						<header class="style1">
 							<h2>
                                 Créer une application web de<br class="mobile-hide" />
 								location immobilière
                         	</h2>
 						</header>
-						<div class="container-gallery">
-							<div id="image-modal" class="image-modal">
-								<span class="close" id="close-modal">
+						<div class="container-gallery" role="region" aria-label="Galerie d'images">
+							<div id="image-modal" class="image-modal" role="dialog" aria-label="Modale d'image">
+								<span class="close" id="close-modal" role="button" aria-label="Fermer la modale">
 									&times;
 								</span>
 								<div class="modal-container">
@@ -121,10 +127,11 @@
 								</div>
 							</div>
 						</div>
+
 						<section id="features">
 							<div class="feature-list">
 								<div class="row">
-									<div class="col-6 col-12-medium">
+									<div class="col-6 col-12-medium" role="region" aria-label="Etapes du projet">
 										<section>
 											<h3 class="icon brands fa-react">
 												Etapes du projet
@@ -151,7 +158,7 @@
 											</ol>
 										</section>
 									</div>
-									<div class="col-6 col-12-medium">
+									<div class="col-6 col-12-medium" role="region" aria-label="Compétences évaluées">
 										<section>
 											<h3 class="icon solid fa-search">
 												Compétences évaluées
@@ -179,7 +186,7 @@
 							</div>
 						</section>
 						
-						<article class="box post">
+						<article class="box post" role="article" aria-label="Description du projet">
 							<h3>
 								Description
 							</h3>
@@ -194,7 +201,7 @@
 							<h3>
 								Difficulté(s) rencontrée(s)
 							</h3>
-							<ul class="difficulties">
+							<ul class="difficulties" role="list" aria-label="Liste des difficultés rencontrées">
 								<li>
 									Gérer les animations CSS
 								</li>
@@ -208,22 +215,23 @@
 								</a>
 							</p>
 						</article>
+
 					</div>
 				</div>	
 			</section>
 
 			<!-- Footer -->
-			<section id="footer" class="wrapper">
-				<div class="title">
+			<section id="footer" class="wrapper" role="contentinfo" aria-label="Pied de page">
+				<div class="title" role="heading" aria-level="3">
 					Contact
 				</div>
 				<div class="container">							
 					<!-- Contact -->
-					<section id="features">
+					<section id="features" role="region" aria-label="Informations de contact">
 						<div class="feature-list">
 							<div class="row">
 								<div class="col-6 col-12-medium">
-									<section>
+									<section aria-label="Adresse mail">
 										<h3 class="icon solid fa-envelope">
 											Email
 										</h3>
@@ -235,7 +243,7 @@
 									</section>
 								</div>
 								<div class="col-6 col-12-medium">
-									<section>
+									<section aria-label="Numéro de téléphone">
 										<h3 class="icon solid fa-phone">
 											Téléphone
 										</h3>
@@ -247,19 +255,19 @@
 									</section>
 								</div>
 								<div class="col-6 col-12-medium">
-									<section>
+									<section aria-label="Profil LinkedIn">
 										<h3 class="icon brands fa-linkedin">
 											LinkedIn
 										</h3>
 										<p>
-											<a href="https://www.linkedin.com/in/samuel-duflos-b5624b135" target="_blank" title="Se rendre sur mon profil LinkedIn">
+											<a href="https://www.linkedin.com/in/samuel-duflos-b5624b135" target="_blank" title="Consulter mon profil LinkedIn">
 												Profil LinkedIn
 											</a>
 										</p>
 									</section>
 								</div>
 								<div class="col-6 col-12-medium">
-									<section>
+									<section aria-label="Profil GitHub">
 										<h3 class="icon brands fa-github">
 											GitHub
 										</h3>
@@ -273,13 +281,13 @@
 							</div>
 						</div>
 					</section>
-					<div id="copyright">
+					<div id="copyright" role="contentinfo" aria-label="Droits d'auteur et mentions légales">
 						<ul>
-							<li>
+							<li aria-label="Droits d'auteur">
 								&copy; Samuel Duflos
 							</li>
 							<li>
-								<a href="mentionslegales.html" title="Consulter les mentions légales">
+								<a href="mentionslegales.html" title="Consulter les mentions légales" aria-label="Mentions légales">
 									Mentions légales
 								</a>
 							</li>

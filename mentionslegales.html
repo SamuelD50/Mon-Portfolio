@@ -6,96 +6,102 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" type="image/png" href="images/renard.png"/>
-		<meta name="description" content="Votre description ici. Elle doit être pertinente et concise, résumant le contenu de votre page en quelques phrases.">
+		<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxP.ttf" crossorigin>
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfBBc9.ttf" crossorigin>
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmYUtfBBc9.ttf" crossorigin>
+		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v27/KFOkCnqEu92Fr1Mu51xIIzc.ttf" crossorigin>
+		
+		<meta name="description" content="Bienvenue sur mon portfolio de développeur web. Sur cette page, retrouvez les mentions légales de mon site internet.">
 	</head>
-	<body class="no-sidebar is-preload">
-		<div id="page-wrapper">
+	<body class="no-sidebar is-preload" aria-label="Page des mentions légales">
+		<div id="page-wrapper" role="main">
 
 			<!-- Header -->
-			<section id="header" class="wrapper">
+			<section id="header" class="wrapper" role="banner" aria-label="En-tête">
 
 				<!-- Logo -->
-				<div id="logo">
+				<div id="logo" role="heading" aria-level="1">
 					<h1>
-						<a href="index.html">
+						<a href="index.html" title="Revenir à la page d'accueil">
 							Samuel Duflos
 						</a>
 					</h1>
 					<p>
-						Ici découvrez mes différents travaux !
+						Découvrez vite mon portfolio de développeur web front-end !
 					</p>
 				</div>
 
 				<!-- Nav -->
-				<nav id="nav">
-					<ul>
-						<li class="current">
-							<a href="index.html">
+				<nav id="nav" role="navigation" aria-label="Menu principal">
+					<ul role="menu">
+						<li role="menuitem">
+							<a href="index.html" class="icon solid fa-home" title="Page d'accueil" aria-label="Accueil">
 								Accueil
 							</a>
 						</li>
-						<li>
-							<a href="#">
+						<li role="menuitem" aria-haspopup="true">
+							<a href="#" class="icon solid fa-business-time" title="Mes projets" aria-label="Mes projets">
 								Mes projets
 							</a>
-							<ul>
-								<li>
-									<a href="booki.html">
+							<ul role="menu" aria-hidden="true">
+								<li role="menuitem">
+									<a href="booki.html" class="icon solid fa-code" title="HTML/CSS" aria-label="HTML/CSS">
 										HTML/CSS
 									</a>
 								</li>
-								<li>
-									<a href="sophiebluel.html">
+								<li role="menuitem">
+									<a href="sophiebluel.html" class="icon brands fa-js" title="JavaScript" aria-label="JavaScript">
 										JavaScript
 									</a>
 								</li>
-								<li>
-									<a href="menumaker.html">
+								<li role="menuitem">
+									<a href="menumaker.html" class="icon solid fa-list" title="Gestion de projet" aria-label="Gestion de projet">
 										Gestion de projet
 									</a>
 								</li>
-								<li class="current">
-									<a href="ninacarducci.html">
+								<li role="menuitem">
+									<a href="ninacarducci.html" class="icon solid fa-wrench" title="Optimisation web" aria-label="Optimisation web">
 										Optimisation web
 									</a>
 								</li>
-								<li>
-									<a href="kasa.html">
+								<li role="menuitem">
+									<a href="kasa.html" class="icon brands fa-react" title="React" aria-label="React">
 										React
 									</a>
 								</li>
-								<li>
-									<a href="monvieuxgrimoire.html">
+								<li role="menuitem">
+									<a href="monvieuxgrimoire.html" class="icon brands fa-node" title="Back-end" aria-label="NodeJS">
 										Back-end
 									</a>
 								</li>
-								<li>
-									<a href="monportfolio.html">
+								<li role="menuitem">
+									<a href="monportfolio.html" class="icon solid fa-briefcase" title="Portfolio" aria-label="Portfolio">
 										Portfolio
 									</a>
 								</li>
 							</ul>
-						</li>
+						</li>	
 					</ul>
 				</nav>
 			</section>
-
+			
 			<!-- Main -->
-			<section id="main" class="wrapper style2">
-				<div class="title">
+			<section id="main" class="wrapper style2" role="main" aria-label="Mentions légales">
+				<div class="title" role="heading" aria-level="2">
 					Mentions légales
 				</div>
                 <div class="container">
-
 					<!-- Content -->
 					<div id="content">
+
 						<header class="style1">
 							<h2>
 								En vigueur au 25/03/2024
 							</h2>
 						</header>
 
-						<article class="box post">
+						<article class="box post" role="article" aria-label="Texte juridictionnel">
 							<p>
 								Conformément aux dispositions des Articles 6-III et 19 de la Loi n°2004-575 du 21 juin 2004 pour la
 								Confiance dans l’économie numérique, dite L.C.E.N., il est porté à la connaissance des utilisateurs et
@@ -153,17 +159,17 @@
 			</section>
 
 			<!-- Footer -->
-			<section id="footer" class="wrapper">
-				<div class="title">
+			<section id="footer" class="wrapper" role="contentinfo" aria-label="Pied de page">
+				<div class="title" role="heading" aria-level="3">
 					Contact
 				</div>
-				<div class="container">							
+				<div class="container">
 					<!-- Contact -->
-					<section id="features">
+					<section id="features" role="region" aria-label="Informations de contact">
 						<div class="feature-list">
 							<div class="row">
 								<div class="col-6 col-12-medium">
-									<section>
+									<section aria-label="Adresse mail">
 										<h3 class="icon solid fa-envelope">
 											Email
 										</h3>
@@ -175,7 +181,7 @@
 									</section>
 								</div>
 								<div class="col-6 col-12-medium">
-									<section>
+									<section aria-label="Numéro de téléphone">
 										<h3 class="icon solid fa-phone">
 											Téléphone
 										</h3>
@@ -187,19 +193,19 @@
 									</section>
 								</div>
 								<div class="col-6 col-12-medium">
-									<section>
+									<section aria-label="Profil LinkedIn">
 										<h3 class="icon brands fa-linkedin">
 											LinkedIn
 										</h3>
 										<p>
-											<a href="https://www.linkedin.com/in/samuel-duflos-b5624b135" target="_blank" title="Se rendre sur mon profil LinkedIn">
+											<a href="https://www.linkedin.com/in/samuel-duflos-b5624b135" target="_blank" title="Consulter mon profil LinkedIn">
 												Profil LinkedIn
 											</a>
 										</p>
 									</section>
 								</div>
 								<div class="col-6 col-12-medium">
-									<section>
+									<section aria-label="Profil GitHub">
 										<h3 class="icon brands fa-github">
 											GitHub
 										</h3>
@@ -213,13 +219,13 @@
 							</div>
 						</div>
 					</section>
-					<div id="copyright">
+					<div id="copyright" role="contentinfo" aria-label="Droits d'auteur et mentions légales">
 						<ul>
-							<li>
+							<li aria-label="Droits d'auteur">
 								&copy; Samuel Duflos
 							</li>
 							<li>
-								<a href="mentionslegales.html" title="Consulter les mentions légales">
+								<a href="mentionslegales.html" title="Consulter les mentions légales" aria-label="Mentions légales">
 									Mentions légales
 								</a>
 							</li>
