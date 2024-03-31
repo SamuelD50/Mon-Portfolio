@@ -1477,6 +1477,12 @@ input, select, textarea {
 
 		}
 
+		@media screen and (max-width: 325px) {
+			.row > * {
+				padding: 15px 0 0 15px;
+			}
+		}
+
 /* Section/Article */
 
 	section,
@@ -2639,6 +2645,26 @@ nav ul > li > a:focus {
 				margin-top: -0.5em;
 			}
 
+		@media screen and (min-width: 311px) {
+			.screenupto310px {
+				display: block;
+			}
+
+			.screendownto310px {
+				display: none;
+			}
+		}
+
+		@media screen and (max-width: 310px) {
+			.screenupto310px {
+				display: none;
+			}
+
+			.screendownto310px {
+				display: block;
+			}
+		}
+
 /* Copyright */
 
 	#copyright {
@@ -2864,7 +2890,7 @@ nav ul > li > a:focus {
 				left: 0;
 				position: fixed;
 				top: 0;
-				width: 100%;
+				width: 50%;
 				z-index: 10001;
 				background: none;
 			}
