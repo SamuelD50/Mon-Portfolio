@@ -33,6 +33,7 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 	font-family: "Roboto", sans-serif;
+	min-width: 200px;
 }
 
 ol, ul {
@@ -1479,7 +1480,7 @@ input, select, textarea {
 
 		@media screen and (max-width: 325px) {
 			.row > * {
-				padding: 15px 0 0 15px;
+				padding: 15px 0 0 5px;
 			}
 		}
 
@@ -3127,6 +3128,12 @@ nav ul > li > a:focus {
 				padding-left: 4em;
 			}
 
+			@media screen and (max-width: 325px) {
+				.feature-list section {
+					padding-left: 3.5em;
+				}
+			}
+
 			.feature-list h3:before {
 				font-size: 0.9em;
 			}
@@ -3165,6 +3172,21 @@ nav ul > li > a:focus {
 						height: 15px;
 						bottom: -15px;
 						background-size: 100% 100%;
+					}
+
+					@media screen and (max-width: 225px) {
+						.wrapper .title {
+							width: 100%;
+							margin-left: 0;
+							left: 50%;
+							transform: translateX(-50%);
+						}
+					}
+
+					@media screen and (max-width: 325px) {
+						.wrapper .title:after {
+							width: 0;
+						}
 					}
 
 		/* Header */
