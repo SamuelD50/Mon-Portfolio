@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
       modal.style.display = "block";
       modalImg.src = this.src;
       modalImg.alt = this.alt;
+      modalImg.ariaLabel = this.alt;
       modalImg.srcset = this.srcset;
       modalCaption.innerText = this.alt;
     });
