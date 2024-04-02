@@ -2263,6 +2263,9 @@ input, select, textarea {
 		.wrapper.style1 {
 			background-color: #A52A2A;
 			color: #fff;
+			max-width: 1440px;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 			.wrapper.style1 .title {
@@ -2276,6 +2279,9 @@ input, select, textarea {
 
 		.wrapper.style2 {
 			background: #FDF5E6;
+			max-width: 1440px;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 			.wrapper.style2 .title {
@@ -2321,6 +2327,9 @@ input, select, textarea {
 		height: 24em;
 		background-size: cover;
 		padding: 0;
+		max-width: 1440px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 		#header:before {
@@ -2335,6 +2344,9 @@ input, select, textarea {
 
 		.homepage #header {
 			height: 35em;
+			max-width: 1440px;
+			margin-left: auto;
+			margin-right: auto;
 		}
 
 /* Logo */
@@ -2373,15 +2385,6 @@ input, select, textarea {
 		width: 100%;
 		text-align: center;
 	}
-/* 		
-nav ul > li:first-child > a:focus::before {
-    font-size: 100px;
-}
-
-nav ul > li > a:focus {
-    font-size: 100px;
-} 
-*/
 
 		#nav > ul {
 			display: inline-block;
@@ -2542,6 +2545,9 @@ nav ul > li > a:focus {
 		color: #eee;
 		color: rgba(255, 255, 255, 0.5);
 		padding-bottom: 6em;
+		max-width: 1440px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer b, #footer a {
