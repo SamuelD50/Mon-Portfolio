@@ -1518,6 +1518,13 @@ input, select, textarea {
 			color: #A52A2A;
 		}
 
+		@media screen and (max-width: 400px) {
+			header.style1 strong {
+				font-size: 1.5em;
+			}
+			
+		}
+
 		header.style1 p {
 			color: black;
 			display: block;
