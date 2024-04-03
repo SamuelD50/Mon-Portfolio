@@ -1510,6 +1510,14 @@ input, select, textarea {
 			line-height: 1.5em;
 		}
 
+		header.style1 strong {
+			font-weight: 700;
+    		font-size: 2em;
+    		letter-spacing: 0.075em;
+    		line-height: 1.5em;
+			color: #A52A2A;
+		}
+
 		header.style1 p {
 			color: black;
 			display: block;
@@ -2513,11 +2521,11 @@ input, select, textarea {
 
 /* Features */
 
-	#features header.style1 {
+	.features header.style1 {
 		padding-bottom: 5em;
 	}
 
-	#features ul.actions {
+	.features ul.actions {
 		margin-top: 5em;
 	}
 

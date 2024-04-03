@@ -2,10 +2,10 @@
 <html lang="fr">
 	<head>
 		<title>HTML/CSS - Samuel Duflos</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main-min.css" />
-		<link rel="shortcut icon" type="image/png" href="images/renard.png"/>
+		<meta charset="utf-8" >
+		<meta name="viewport" content="width=device-width, initial-scale=1" >
+		<link rel="stylesheet" href="assets/css/main-min.css" >
+		<link rel="shortcut icon" type="image/png" href="images/renard.png" >
 		<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxP.ttf" crossorigin>
 		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmWUlfBBc9.ttf" crossorigin>
@@ -13,7 +13,7 @@
 		<link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v27/KFOkCnqEu92Fr1Mu51xIIzc.ttf" crossorigin>
 
 		<!-- Balise méta-description -->
-		<meta name="description" content="Bienvenue sur mon portfolio de développeur web. Sur cette page, découvrez mon projet N°1 de ma formation OpenClassrooms sur l'intégration d'une maquette Figma avec HTML & CSS.">
+		<meta name="description" content="Bienvenue sur mon portfolio de développeur web. Sur cette page, découvrez mon projet N°1 de ma formation OpenClassrooms sur l'intégration d'une maquette Figma avec HTML & CSS." >
 
 		<!-- Facebook Meta Tags -->
 		<meta property="og:url" content="https://samueld50.github.io/Mon-Portfolio/booki.html">
@@ -28,7 +28,7 @@
 		<meta property="twitter:url" content="https://samueld50.github.io/Mon-Portfolio/booki.html">
 		<meta name="twitter:title" content="Samuel Duflos - Intégration HTML/CSS de Booki, agence de voyage">
 		<meta name="twitter:description" content="Bienvenue sur mon portfolio de développeur web. Sur cette page, découvrez mon projet N°1 de ma formation OpenClassrooms sur l'intégration d'une maquette Figma avec HTML & CSS.">
-		<meta name="twitter:image" content="https://samueld50.github.io/Mon-Portfolio/images/Booki-Accueil.webp">
+		<meta name="twitter:image" content="https://samueld50.github.io/Mon-Portfolio/images/Booki-Accueil.webp" >
 		<!--  -->
 
 		<!-- Rich Snippets -->
@@ -57,8 +57,8 @@
 		<!--  -->
 	</head>
 
-	<body class="no-sidebar is-preload" aria-label="Page concernant le projet HTML/CSS">
-		<div id="page-wrapper" role="main">
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper" role="main" aria-label="Page concernant le projet HTML/CSS">
 
 			<!-- Header -->
 			<section id="header" class="wrapper" role="banner" aria-label="En-tête">
@@ -76,7 +76,7 @@
 				</div>
 
 				<!-- Nav -->
-				<nav id="nav" role="navigation" aria-label="Menu principal">
+				<nav id="nav" aria-label="Menu principal">
 					<ul role="menu">
 						<li role="menuitem">
 							<a href="index.html" class="icon solid fa-home" title="Page d'accueil" aria-label="Accueil">
@@ -131,18 +131,18 @@
 			
 			<!-- Main -->
 			<section id="main" class="wrapper style2" role="main" aria-label="Projet HTML/CSS">
-				<div class="title" role="heading" aria-level="2">
+				<h2 class="title" aria-level="2">
 					HTML & CSS
-				</div>
+				</h2>
                 <div class="container" >
 
 					<!-- Content -->
 					<div id="content">
 						<header class="style1">
-							<h2>
-								Créer la page d'accueil d'une<br class="mobile-hide" />
+							<strong>
+								Créer la page d'accueil d'une<br class="mobile-hide" >
 								agence de voyage
-							</h2>
+							</strong>
 						</header>
 						<div class="container-gallery" role="region" aria-label="Galerie d'images">
 							<div id="image-modal" class="image-modal" role="dialog" aria-label="Modale d'image">
@@ -150,26 +150,27 @@
 									&times;
 								</span>
 								<div class="modal-container">
-									<img class="modal-content" id="modal-image" alt="Texte alternatif"/>
-									<h2 class="modal-caption">
+									<img src="#" class="modal-content" id="modal-image" alt="Texte alternatif">
+									<h3 class="modal-caption">
 										Description de l'image
-									</h2>
+									</h3>
 								</div>
 							</div>
 							<div class="gallery">
 								<div class="gallery-wrapper">
 									<div class="big">
-										<img src="images/Booki-Accueil-800w.webp" 
+										<img src="images/Booki-Accueil-800w.webp"
 										srcset="images/Booki-Accueil-800w.webp 800w,
 										images/Booki-Accueil-600w.webp 600w,
 										images/Booki-Accueil-400w.webp 400w,
 										images/Booki-Accueil-200w.webp 200w,
-										images/Booki-Accueil-150w.webp 150w" width="800" height="1014" alt="Page d'accueil de Booki"/>
+										images/Booki-Accueil-150w.webp 150w"
+										width="800" height="1014" alt="Page d'accueil de Booki">
 									</div>
 								</div>
 							</div>
 						</div>
-						<section id="features">
+						<section class="features">
 							<div class="feature-list">
 								<div class="row">
 									<div class="col-6 col-12-medium" role="region" aria-label="Etapes du projet">
@@ -221,12 +222,12 @@
 							</div>
 						</section>
 
-						<article class="box post" role="article" aria-label="Description du projet">
+						<article class="box post" aria-label="Description du projet">
 							<h3>
 								Description
 							</h3>
 							<p>
-								Pour ce premier projet, découper préalablement la maquette Figma (mobile < 768px, tablette >= 768px, desktop > 1024px) m'a permis de mieux structurer ma page HTML.
+								Pour ce premier projet, découper préalablement la maquette Figma (mobile &lt; 768px, tablette >= 768px, desktop > 1024px) m'a permis de mieux structurer ma page HTML.
 								J'ai utilisé les flexbox pour organiser les éléments que ce soit verticalement ou horizontalement.
 								Pour les cartes d'hébergement, je me suis inspiré des snippets de code de W3C et j'ai adapté les images avec la propriété CSS "Object-fit".
 								Les Média Queries ont été utilisées pour rendre la page adaptable aux diverses tailles d'écran, optimisant ainsi l'expérience utilisateur. 
@@ -238,7 +239,7 @@
 							<h3>
 								Difficulté(s) rencontrée(s)
 							</h3>
-							<ul class="difficulties" role="list" aria-label="Liste des difficultés rencontrées">
+							<ul class="difficulties" aria-label="Liste des difficultés rencontrées">
 								<li>
 									Volonté de retranscrire la maquette au pixel près
 								</li>
@@ -261,12 +262,12 @@
 
 			<!-- Footer -->
 			<section id="footer" class="wrapper" role="contentinfo" aria-label="Pied de page">
-				<div class="title" role="heading" aria-level="3">
+				<h2 class="title" aria-level="3">
 					Contact
-				</div>
+				</h2>
 				<div class="container">							
 					<!-- Contact -->
-					<section id="features" role="region" aria-label="Informations de contact">
+					<section class="features" aria-label="Informations de contact">
 						<div class="feature-list">
 							<div class="row">
 								<div class="col-6 col-12-medium">
@@ -325,7 +326,7 @@
 					</section>
 					<div id="copyright" role="contentinfo" aria-label="Droits d'auteur et mentions légales">
 						<ul>
-							<li aria-label="Droits d'auteur">
+							<li>
 								&copy; Samuel Duflos
 							</li>
 							<li>
