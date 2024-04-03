@@ -1,4 +1,4 @@
 User-agent: *
-Allow: /
+Disallow:
 
 Sitemap: https://samueld50.github.io/Mon-Portfolio/sitemap.xml
