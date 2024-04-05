@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
       modalImg.ariaLabel = this.alt;
       modalImg.srcset = this.srcset;
       modalCaption.innerText = this.alt;
+
+      const dataSizes = this.getAttribute("data-sizes");
+      modalImg.setAttribute("sizes", dataSizes)
     });
   });
 
