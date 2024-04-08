@@ -211,9 +211,6 @@ input, select, textarea {
 		margin-bottom: 2em;
 	}
 
-	/* ul {
-	} */
-
 /* Container */
 
 	.container {
@@ -1503,7 +1500,7 @@ input, select, textarea {
 		padding: 1em 0 1em 0;
 	}
 
-		header.style1 h2 {
+		header.style1 h3 {
 			font-weight: 700;
 			font-size: 2em;
 			letter-spacing: 0.075em;
@@ -1512,7 +1509,7 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 400px) {
-			header.style1 h2 {
+			header.style1 h3 {
 				font-size: 1.5em;
 			}
 			
@@ -1647,8 +1644,7 @@ input, select, textarea {
 
 		.image img {
 			display: block;
-/* 			width: 100%;
- */		}
+		}
 
 		.image.fit {
 			display: block;
@@ -1924,14 +1920,14 @@ input, select, textarea {
 
 		}
 
-		#main .feature-list h3 {
+		#main .feature-list h4 {
 			color: #A52A2A !important;
 			margin: -0.35em 0 0.75em 0;
 			font-size: 1.15em;
 			letter-spacing: 0.05em;
 		}
 
-			#main .feature-list h3:before {
+			#main .feature-list h4:before {
 				display: block;
 				color: #FDF5E6;
 				background-color: #A52A2A;
@@ -2018,7 +2014,7 @@ input, select, textarea {
 		letter-spacing: 0.05em;
 	}
 
-	.box h3 {
+	.box h4 {
 		margin: 0 0 0.5em 0;
 		font-size: 1em;
 		font-weight: 600;
@@ -2641,9 +2637,6 @@ input, select, textarea {
 				color: inherit;
 			}
 
-		/* #footer .feature-list {
-			max-width: 100%;
-		} */
 
 			#footer .feature-list section {
 				border-top-color: rgba(255, 255, 255, 0.05);
@@ -2688,9 +2681,6 @@ input, select, textarea {
 
 	#copyright {
 		text-align: center;
-		/* padding-top: 20px;
-		margin-top: 20px;
-		border-top: 1px solid #D3D3D3; */
 	}
 
 		#copyright ul {
@@ -2794,7 +2784,6 @@ input, select, textarea {
 		/* Copyright */
 
 			#copyright {
-				/* padding-top: 4em; */
 				margin-top: 2em;
 			}
 
@@ -2869,15 +2858,6 @@ input, select, textarea {
 			}
 
 	}
-
-		/* @media screen and (max-width: 980px) and (min-width: 737px) {
-
-				#footer .feature-list > .row > :nth-child(2) > section {
-					border-top: 0;
-					padding-top: 0;
-				}
-
-		} */
 
 	@media screen and (max-width: 980px) {
 
@@ -3097,7 +3077,7 @@ input, select, textarea {
 				padding: 0 0 1em 0;
 			}
 
-				header.style1 h2 {
+				header.style1 h3 {
 					font-size: 1.5em;
 					letter-spacing: 0.075em;
 					line-height: 1.25em;
@@ -3152,6 +3132,7 @@ input, select, textarea {
 				}
 			}
 
+			.feature-list h4:before,
 			.feature-list h3:before {
 				font-size: 0.9em;
 			}
@@ -3300,7 +3281,6 @@ input, select, textarea {
 
 			#copyright {
 				padding-top: 0;
-				/* margin-top: 4em; */
 				border-top: 0;
 			}
 
