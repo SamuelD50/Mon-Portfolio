@@ -1666,7 +1666,6 @@ input, select, textarea {
 				height: auto;
 				margin-left: auto;
 				margin-right: auto;
-				/* width: auto; */
 			}
 
 		.image.featured {
@@ -2173,9 +2172,6 @@ input, select, textarea {
 		width: 100%;
 		height: 100%;
 		background-color: rgba(243, 243, 243, 0.9);
-		margin-right: auto;
-		margin-left: auto;
-		max-width: 1440px;
 	}
 	
 	.modal-container {
@@ -2271,9 +2267,6 @@ input, select, textarea {
 		.wrapper.style1 {
 			background-color: #A52A2A;
 			color: #fff;
-			max-width: 1440px;
-			margin-left: auto;
-			margin-right: auto;
 		}
 
 			.wrapper.style1 .title {
@@ -2287,9 +2280,6 @@ input, select, textarea {
 
 		.wrapper.style2 {
 			background: #FDF5E6;
-			max-width: 1440px;
-			margin-left: auto;
-			margin-right: auto;
 		}
 
 			.wrapper.style2 .title {
@@ -2335,9 +2325,6 @@ input, select, textarea {
 		height: 24em;
 		background-size: cover;
 		padding: 0;
-		max-width: 1440px;
-		margin-left: auto;
-		margin-right: auto;
 	}
 
 		#header:before {
@@ -2352,9 +2339,6 @@ input, select, textarea {
 
 		.homepage #header {
 			height: 35em;
-			max-width: 1440px;
-			margin-left: auto;
-			margin-right: auto;
 		}
 
 /* Logo */
@@ -2553,9 +2537,6 @@ input, select, textarea {
 		color: #eee;
 		color: rgba(255, 255, 255, 0.5);
 		padding-bottom: 6em;
-		max-width: 1440px;
-		margin-left: auto;
-		margin-right: auto;
 	}
 
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer b, #footer a {
