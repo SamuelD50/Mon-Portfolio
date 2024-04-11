@@ -13,6 +13,11 @@ document.addEventListener("DOMContentLoaded", function () {
       modalImg.alt = this.alt;
       modalImg.ariaLabel = this.alt;
       modalCaption.innerText = this.alt;
+
+      const dataWidth = this.getAttribute("data-width");
+      modalImg.setAttribute("width", dataWidth);
+      const dataHeight = this.getAttribute("data-height");
+      modalImg.setAttribute("height", dataHeight);
     });
   });
 
